@@ -57,7 +57,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: #e05454;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -121,7 +121,7 @@
     border-color: #222;
   }
   .code {
-    background: #111;
+    background: #e05454;
   }
   .logo img {
     filter: invert(1);
