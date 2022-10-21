@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import LINK from "next/link";
 import Image from "next/image";
 import image42 from "/public/image42.png";
+import Carousel1 from "../components/Carousel1";
+import Carousel2 from "../components/Carousel2";
 
 export default function Home() {
   return (
@@ -48,12 +50,13 @@ export default function Home() {
 
       <section
         id="landing-section-2 "
-        className="bg-gradient-to-r h-[50vh] from-violet-500 to-fuchsia-500"
+        className="bg-gradient-to-r h-[60vh] from-violet-500 to-fuchsia-500"
       >
         <h1 className="text-center text-xl font-bold md:text-2xl lg:text-5xl mt-8 mb-0 pb-0">
           How far you will push the civilization Come and explore Civil and Slay
         </h1>
-        <div className="container2">
+        <Carousel1 />
+        {/* <div className="container2">
           <div className="card">
             <h3 className="title">France</h3>
             <div className="bar">
@@ -146,7 +149,7 @@ export default function Home() {
               <div className="filledbar"></div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section id="landing-section-3"></section>
@@ -154,7 +157,9 @@ export default function Home() {
       {/* Carousel Teams Slider */}
       <section id="landing-section-4">
         <div className=" h-[60vh] bg-gradient-to-b  from-[#022a2a] to-[#450202] ">
-          <div className="mx-36 pt-24 items-center my-auto "></div>
+          <div className="mx-36 pt-24 items-center my-auto ">
+            <Carousel2 />
+          </div>
         </div>
       </section>
 
