@@ -4,7 +4,7 @@ import LINK from "next/link";
 import Image from "next/image";
 import image42 from "/public/image42.png";
 import Carousel1 from "../components/Carousel1";
-import Carousel2 from "../components/Carousel2";
+import Statistic from "../components/Statistic";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           {/* landing bg-video */}
 
           <video
-            className=" top-0 w-full opacity-90 object-cover"
+            className="top-0 w-full opacity-90 object-cover"
             autoPlay
             loop
             muted
@@ -38,12 +38,12 @@ export default function Home() {
             <button className="">
               <a
                 href="/wallet"
-                className="px-6 py-1 mx-12 text-[2rem] md:text-[3rem] text-black bg-pink-400 rounded-full baseline hover:bg-sky-400 "
+                className="mt-6 px-12 py-3 mx-12 text-[1rem] md:text-[3rem] text-white bg-red-500 rounded-full baseline hover:bg-orange-500 hover:text-black"
               >
                 Wallet
               </a>
-              <span className="block">Learn More→</span>
             </button>
+            <span className="block">Learn More→</span>
           </div>
         </div>
       </section>
@@ -56,6 +56,8 @@ export default function Home() {
           How far you will push the civilization Come and explore Civil and Slay
         </h1>
         <Carousel1 />
+        {/* <Statistic /> */}
+
         {/* <div className="container2">
           <div className="card">
             <h3 className="title">France</h3>
@@ -155,15 +157,13 @@ export default function Home() {
       <section id="landing-section-3"></section>
 
       {/* Carousel Teams Slider */}
-      <section id="landing-section-4">
+      {/* <section id="landing-section-4">
         <div className=" h-[60vh] bg-gradient-to-b  from-[#022a2a] to-[#450202] ">
-          <div className="mx-36 pt-24 items-center my-auto ">
-            <Carousel2 />
-          </div>
+          <div className="mx-36 pt-24 items-center my-auto "></div>
         </div>
-      </section>
+      </section> */}
 
-      <section id="landing-section-5">
+      {/* <section id="landing-section-5">
         <div className="flex flex-col items-start md:items-center md:flex-row md:pb-10 bg-[url('../public/humankind-white-bkg.png')] ">
           <div className="flex flex-col mx-auto pl-8 w-[80%] md:w-1/2  md:ml-32 ">
             <h1 className="font-bold text-2xl mt-16 mb-4 ">
@@ -198,7 +198,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

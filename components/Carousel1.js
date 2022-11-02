@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-
+import Char_Card from "./Char_Card";
 const Carousel1 = () => {
   return (
     <>
-      <div className="carousel w-full">
+      {/* <div className="carousel carousel-center rounded-box">
         <div
           id="item1"
           className="carousel-item w-full flex my-auto mx-auto align-center justify-center "
@@ -82,6 +82,29 @@ const Carousel1 = () => {
         <a href="#item4" className="btn btn-xs">
           4
         </a>
+      </div> */}
+      <div className="carousel rounded-box">
+        <div className="carousel-item">
+          <Char_Card src="/../public/Rectangle 23870 (1).png " />
+        </div>
+        <div className="carousel-item">
+          <Char_Card src="/../public/Rectangle 23870 (1).png " />
+        </div>
+        <div className="carousel-item">
+          <Char_Card src="/../public/Rectangle 23870 (1).png " />
+        </div>
+        <div className="carousel-item">
+          <Char_Card src="/../public/Rectangle 23870 (1).png " />
+        </div>
+        <div className="carousel-item">
+          <Char_Card src="/../public/Rectangle 23870 (1).png " />
+        </div>
+        <div className="carousel-item">
+          <Char_Card src="/../public/Rectangle 23870 (1).png " />
+        </div>
+        <div className="carousel-item">
+          <Char_Card src="/../public/Rectangle 23870 (1).png " />
+        </div>
       </div>
     </>
   );
